@@ -1,4 +1,4 @@
-.input-box {
+.input-box1 {
 	flex-grow: 1;
 	padding: .375rem .75rem;
 	font-size: 1rem;
@@ -11,14 +11,14 @@
 	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 	margin: 8px 0 0 0;
 }
-.input-box:focus {
+.input-box1:focus {
 	color: #495057;
 	background-color: #fff;
 	border-color: #80bdff;
 	outline: 0;
 	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
-.input-box:focus + .search-result {
+.input-box1:focus + .search-result {
 	display: block;
 }
 .search-result:hover {
@@ -40,7 +40,7 @@
 }
 /* checkbox css starts here */
 /* The container */
-.container {
+.container1 {
 	display: block;
 	position: relative;
 	padding-left: 35px;
@@ -54,7 +54,7 @@
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.container1 input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -63,7 +63,7 @@
 }
 
 /* Create a custom checkbox */
-.checkmark {
+.checkmark1 {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -75,30 +75,30 @@
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.container1:hover input ~ .checkmark1 {
 	background-color: #ccc;
 	box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, .25);
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.container1 input:checked ~ .checkmark1 {
 	background-color: #2196f3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+.checkmark1:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.container1 input:checked ~ .checkmark1:after {
 	display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.container1 .checkmark1:after {
 	left: 6px;
 	top: 2px;
 	width: 5px;
@@ -109,14 +109,14 @@
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-.multiSelect {
+.multiSelect1 {
 	text-align: left;
 	margin: 12px;
 	display: flex;
     flex-direction: column;
 }
 /* chip css */
-.chip {
+.chip1 {
 	flex-grow: 1;
 }
 .chip-body {

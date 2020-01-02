@@ -510,12 +510,12 @@ var Multiselect = exports.Multiselect = function (_Component) {
             var list = this.state.dropDownValue ? this.state.dropDownValue.map(function (data, index) {
                 return _react2.default.createElement(
                     'label',
-                    { className: 'container', key: index },
+                    { className: 'container1', key: index },
                     data.name,
                     _react2.default.createElement('input', { type: 'checkbox', value: data.value, onChange: function onChange(e) {
                             return _this4.checkBox(e.target.value, e.target.checked);
                         }, checked: _this4.state.checked.includes(data.value) ? true : false }),
-                    _react2.default.createElement('span', { className: 'checkmark' })
+                    _react2.default.createElement('span', { className: 'checkmark1' })
                 );
             }) : null;
             return list;
@@ -527,18 +527,18 @@ var Multiselect = exports.Multiselect = function (_Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'multiSelect' },
+                { className: 'multiSelect1' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'chip' },
+                    { className: 'chip1' },
                     this.returnChip()
                 ),
-                _react2.default.createElement('input', { type: 'text', name: 'Search', placeholder: 'Search Data', className: 'input-box', onChange: function onChange(e) {
+                _react2.default.createElement('input', { type: 'text', name: 'Search', placeholder: 'Search Data', className: 'input-box1', onChange: function onChange(e) {
                         return _this5.searchFun(e);
                     } }),
                 _react2.default.createElement(
                     'div',
-                    { className: 'search-result' },
+                    { className: 'search-result1' },
                     _react2.default.createElement(
                         'div',
                         { className: 'list-result' },
@@ -572,7 +572,7 @@ exports = module.exports = __webpack_require__(8)(false);
 
 
 // module
-exports.push([module.i, ".input-box {\n\tflex-grow: 1;\n\tpadding: .375rem .75rem;\n\tfont-size: 1rem;\n\tline-height: 1.5;\n\tcolor: #495057;\n\tbackground-color: #fff;\n\tbackground-clip: padding-box;\n\tborder: 1px solid #ced4da;\n\tborder-radius: .25rem;\n\ttransition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n\tmargin: 8px 0 0 0;\n}\n.input-box:focus {\n\tcolor: #495057;\n\tbackground-color: #fff;\n\tborder-color: #80bdff;\n\toutline: 0;\n\tbox-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);\n}\n.input-box:focus + .search-result {\n\tdisplay: block;\n}\n.search-result:hover {\n\tdisplay: block;\n}\n.search-result {\n\tborder-left: 1px solid #ccc;\n\tborder-right: 1px solid #ccc;\n\tborder-bottom: 1px solid #ccc;\n\tmargin-top: 0;\n\tlist-style: none;\n\tpadding-inline-start: 0;\n\tdisplay: none;\n\tmax-height: 9rem;\n\toverflow: scroll;\n}\n.search-result > .list-result {\n\tpadding: 10px;\n}\n/* checkbox css starts here */\n/* The container */\n.container {\n\tdisplay: block;\n\tposition: relative;\n\tpadding-left: 35px;\n\tmargin-bottom: 12px;\n\tcursor: pointer;\n\tfont-size: 17px;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n\n/* Hide the browser's default checkbox */\n.container input {\n\tposition: absolute;\n\topacity: 0;\n\tcursor: pointer;\n\theight: 0;\n\twidth: 0;\n}\n\n/* Create a custom checkbox */\n.checkmark {\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\theight: 20px;\n\twidth: 20px;\n\tbackground-color: #eee;\n\tborder-radius: .25rem;\n\ttransition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n}\n\n/* On mouse-over, add a grey background color */\n.container:hover input ~ .checkmark {\n\tbackground-color: #ccc;\n\tbox-shadow: 0 0 0 0.1rem rgba(0, 123, 255, .25);\n}\n\n/* When the checkbox is checked, add a blue background */\n.container input:checked ~ .checkmark {\n\tbackground-color: #2196f3;\n}\n\n/* Create the checkmark/indicator (hidden when not checked) */\n.checkmark:after {\n\tcontent: \"\";\n\tposition: absolute;\n\tdisplay: none;\n}\n\n/* Show the checkmark when checked */\n.container input:checked ~ .checkmark:after {\n\tdisplay: block;\n}\n\n/* Style the checkmark/indicator */\n.container .checkmark:after {\n\tleft: 6px;\n\ttop: 2px;\n\twidth: 5px;\n\theight: 10px;\n\tborder: solid white;\n\tborder-width: 0 3px 3px 0;\n\t-webkit-transform: rotate(45deg);\n\t-ms-transform: rotate(45deg);\n\ttransform: rotate(45deg);\n}\n.multiSelect {\n\ttext-align: left;\n\tmargin: 12px;\n\tdisplay: flex;\n    flex-direction: column;\n}\n/* chip css */\n.chip {\n\tflex-grow: 1;\n}\n.chip-body {\n\theight: 20px;\n\tmin-width: 55px;\n\twidth: auto;\n\tbackground-color: #2196f3;\n\tcolor: #ffffff;\n\tpadding: 5px;\n\ttext-align: center;\n\tborder-radius: .25rem;\n\tdisplay: inline-block;\n\tmargin-left: 3px;\n\tmargin-bottom: 3px;\n}\n.chip-text {\n\tmargin: 0;\n\tdisplay: inline;\n}\n.chip-close {\n\tbackground: none;\n\tcolor: inherit;\n\tborder: none;\n\tpadding: 0;\n\tfont: inherit;\n\tcursor: pointer;\n\toutline: inherit;\n\tfloat: right;\n\tcursor: pointer;\n\tmargin-left: 3px;\n}\n", ""]);
+exports.push([module.i, ".input-box1 {\n\tflex-grow: 1;\n\tpadding: .375rem .75rem;\n\tfont-size: 1rem;\n\tline-height: 1.5;\n\tcolor: #495057;\n\tbackground-color: #fff;\n\tbackground-clip: padding-box;\n\tborder: 1px solid #ced4da;\n\tborder-radius: .25rem;\n\ttransition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n\tmargin: 8px 0 0 0;\n}\n.input-box1:focus {\n\tcolor: #495057;\n\tbackground-color: #fff;\n\tborder-color: #80bdff;\n\toutline: 0;\n\tbox-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);\n}\n.input-box1:focus + .search-result {\n\tdisplay: block;\n}\n.search-result:hover {\n\tdisplay: block;\n}\n.search-result {\n\tborder-left: 1px solid #ccc;\n\tborder-right: 1px solid #ccc;\n\tborder-bottom: 1px solid #ccc;\n\tmargin-top: 0;\n\tlist-style: none;\n\tpadding-inline-start: 0;\n\tdisplay: none;\n\tmax-height: 9rem;\n\toverflow: scroll;\n}\n.search-result > .list-result {\n\tpadding: 10px;\n}\n/* checkbox css starts here */\n/* The container */\n.container1 {\n\tdisplay: block;\n\tposition: relative;\n\tpadding-left: 35px;\n\tmargin-bottom: 12px;\n\tcursor: pointer;\n\tfont-size: 17px;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n}\n\n/* Hide the browser's default checkbox */\n.container1 input {\n\tposition: absolute;\n\topacity: 0;\n\tcursor: pointer;\n\theight: 0;\n\twidth: 0;\n}\n\n/* Create a custom checkbox */\n.checkmark1 {\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\theight: 20px;\n\twidth: 20px;\n\tbackground-color: #eee;\n\tborder-radius: .25rem;\n\ttransition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;\n}\n\n/* On mouse-over, add a grey background color */\n.container1:hover input ~ .checkmark1 {\n\tbackground-color: #ccc;\n\tbox-shadow: 0 0 0 0.1rem rgba(0, 123, 255, .25);\n}\n\n/* When the checkbox is checked, add a blue background */\n.container1 input:checked ~ .checkmark1 {\n\tbackground-color: #2196f3;\n}\n\n/* Create the checkmark/indicator (hidden when not checked) */\n.checkmark1:after {\n\tcontent: \"\";\n\tposition: absolute;\n\tdisplay: none;\n}\n\n/* Show the checkmark when checked */\n.container1 input:checked ~ .checkmark1:after {\n\tdisplay: block;\n}\n\n/* Style the checkmark/indicator */\n.container1 .checkmark1:after {\n\tleft: 6px;\n\ttop: 2px;\n\twidth: 5px;\n\theight: 10px;\n\tborder: solid white;\n\tborder-width: 0 3px 3px 0;\n\t-webkit-transform: rotate(45deg);\n\t-ms-transform: rotate(45deg);\n\ttransform: rotate(45deg);\n}\n.multiSelect1 {\n\ttext-align: left;\n\tmargin: 12px;\n\tdisplay: flex;\n    flex-direction: column;\n}\n/* chip css */\n.chip1 {\n\tflex-grow: 1;\n}\n.chip-body {\n\theight: 20px;\n\tmin-width: 55px;\n\twidth: auto;\n\tbackground-color: #2196f3;\n\tcolor: #ffffff;\n\tpadding: 5px;\n\ttext-align: center;\n\tborder-radius: .25rem;\n\tdisplay: inline-block;\n\tmargin-left: 3px;\n\tmargin-bottom: 3px;\n}\n.chip-text {\n\tmargin: 0;\n\tdisplay: inline;\n}\n.chip-close {\n\tbackground: none;\n\tcolor: inherit;\n\tborder: none;\n\tpadding: 0;\n\tfont: inherit;\n\tcursor: pointer;\n\toutline: inherit;\n\tfloat: right;\n\tcursor: pointer;\n\tmargin-left: 3px;\n}\n", ""]);
 
 // exports
 

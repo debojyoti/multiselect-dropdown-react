@@ -64,21 +64,21 @@ export class Multiselect extends Component {
     }
     returnList() {
         const list = this.state.dropDownValue ? this.state.dropDownValue.map((data, index) =>
-        <label className="container" key={index}>{data.name}
+        <label className="container1" key={index}>{data.name}
         <input type="checkbox" value={data.value} onChange={e => this.checkBox(e.target.value, e.target.checked)} checked = {this.state.checked.includes(data.value) ? true : false} />
-        <span className="checkmark"></span>
+        <span className="checkmark1"></span>
     </label>
         ) : null;
         return list;
     }
     render() {
         return (
-            <div className="multiSelect">
-                <div className="chip">
+            <div className="multiSelect1">
+                <div className="chip1">
                     {this.returnChip()}
                 </div>
-                <input type="text" name="Search" placeholder="Search Data" className="input-box" onChange={e => this.searchFun(e)}/>
-                <div className="search-result">
+                <input type="text" name="Search" placeholder="Search Data" className="input-box1" onChange={e => this.searchFun(e)}/>
+                <div className="search-result1">
                     <div className="list-result">
                         {this.returnList()}
                     </div>
