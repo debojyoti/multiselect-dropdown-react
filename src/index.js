@@ -12,7 +12,16 @@ export class Multiselect extends Component {
           this.checkBox = this.checkBox.bind(this);
     }
     componentWillMount() {
+        this._initializeState();
+    }
+    componentDidUpdate(prevProps, prevState) {
+        if (JSON.stringify(prevProps) !== JSON.stringify(this.props)) {
+            this._initializeState();
+        }
+    }
+    _initializeState() {
         this.setState({
+            checked: this.props.checked,
             dropDownValue: this.props.options
         });
     }
