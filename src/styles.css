@@ -18,13 +18,13 @@
 	outline: 0;
 	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 }
-.input-box1:focus + .search-result {
+.input-box1:focus + .search-result1 {
 	display: block;
 }
-.search-result:hover {
+.search-result1:hover {
 	display: block;
 }
-.search-result {
+.search-result1 {
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -35,7 +35,7 @@
 	max-height: 9rem;
 	overflow: scroll;
 }
-.search-result > .list-result {
+.search-result1 > .list-result {
 	padding: 10px;
 }
 /* checkbox css starts here */
