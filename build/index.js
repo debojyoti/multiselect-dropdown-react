@@ -533,7 +533,7 @@ var Multiselect = exports.Multiselect = function (_Component) {
                     { className: 'chip1' },
                     this.returnChip()
                 ),
-                _react2.default.createElement('input', { type: 'text', name: 'Search', placeholder: 'Search Data', className: 'input-box1', onChange: function onChange(e) {
+                _react2.default.createElement('input', { type: 'text', name: 'Search', placeholder: this.props.searchPlaceHolder || "Search", className: 'input-box1', onChange: function onChange(e) {
                         return _this5.searchFun(e);
                     } }),
                 _react2.default.createElement(
