@@ -54,9 +54,13 @@ export class Multiselect extends Component {
         }
     }
     returnChip() {
+        const dropDownValueKeyValuePair = {};
+        this.state.dropDownValue.forEach(dropDown => {
+            dropDownValueKeyValuePair[dropDown.value] = dropDown.name;
+        } )
         const chip = this.state.checked ? this.state.checked.map((data, index) =>
             <div className="chip-body" key={index}>
-                <p className="chip-text">{data}</p>
+                <p className="chip-text">{dropDownValueKeyValuePair[data]}</p>
                 <button className="chip-close" onClick={e => this.removeChip(data)}>&times;</button>
             </div>
         ) : []

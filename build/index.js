@@ -482,6 +482,10 @@ var Multiselect = exports.Multiselect = function (_Component) {
         value: function returnChip() {
             var _this3 = this;
 
+            var dropDownValueKeyValuePair = {};
+            this.state.dropDownValue.forEach(function (dropDown) {
+                dropDownValueKeyValuePair[dropDown.value] = dropDown.name;
+            });
             var chip = this.state.checked ? this.state.checked.map(function (data, index) {
                 return _react2.default.createElement(
                     'div',
@@ -489,7 +493,7 @@ var Multiselect = exports.Multiselect = function (_Component) {
                     _react2.default.createElement(
                         'p',
                         { className: 'chip-text' },
-                        data
+                        dropDownValueKeyValuePair[data]
                     ),
                     _react2.default.createElement(
                         'button',
